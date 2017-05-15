@@ -1,0 +1,303 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={DISMATH101: Solved Problems in Discrete Math},
+            pdfauthor={Melvin Cabatuan},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{DISMATH101: Solved Problems in Discrete Math}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{Melvin Cabatuan}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \predate{\centering\large\emph}
+  \postdate{\par}
+  \date{2017-05-13}
+
+\usepackage{booktabs}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{mathspec}
+\usepackage{tcolorbox}
+\newcounter{mycolorbox}[section]
+\newenvironment{mycolorbox}{\refstepcounter{mycolorbox}\begin{tcolorbox}[arc=4mm,outer arc=1mm, title=Exercise~\themycolorbox.]}{\end{tcolorbox}}
+\newenvironment{solution}{\begin{tcolorbox}[arc=4mm,outer arc=1mm]}{\end{tcolorbox}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter{Logic}\label{logic}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Propositional Logic}\label{propositional-logic}
+
+\section{Logical connectives}\label{logical-connectives}
+
+\section{Truth table}\label{truth-table}
+
+\section{Logical Equivalences}\label{logical-equivalences}
+
+\section{Predicate Logic}\label{predicate-logic}
+
+\section{Quantifiers}\label{quantifiers}
+
+\section{Rules of Inference}\label{rules-of-inference}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\BeginKnitrBlock{mycolorbox}
+The following statements are propositions, EXCEPT\\
+A. Euclid of Alexandria is human.\(\hspace{3cm}\:\)C. \(5 > 8\)\\
+B. \(1 + 1 = 2\) \(\hspace{6.4cm}\)D. Who am I?
+\EndKnitrBlock{mycolorbox}
+
+\begin{quote}
+\BeginKnitrBlock{definition}[Proposition]
+\protect\hypertarget{def:unnamed-chunk-2}{}{\label{def:unnamed-chunk-2}
+\iffalse (Proposition) \fi }a statement that is either true or false
+(but not both).
+\EndKnitrBlock{definition}
+\end{quote}
+
+\begin{quote}
+\textbf{Solution:} ``\textbf{D.} Who am I?'' is not a proposition
+because interrogative statements have no truth value.
+\end{quote}
+
+\BeginKnitrBlock{mycolorbox}
+What is the question?
+\EndKnitrBlock{mycolorbox}
+
+\begin{quote}
+\textbf{Solution:} ``I thoroughly disapprove of duels. If a man should
+challenge me, I would take him kindly and forgivingly by the hand and
+lead him to a quiet place and kill him.''
+\end{quote}
+
+\chapter{Sets}\label{sets}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Cardinality of Sets}\label{cardinality-of-sets}
+
+\section{Set Operations}\label{set-operations}
+
+\section{Set Identities}\label{set-identities}
+
+\section{Set Representation}\label{set-representation}
+
+\section{Venn Diagram}\label{venn-diagram}
+
+\section{Cartesian Product}\label{cartesian-product}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\chapter{Proofs}\label{proofs}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Direct Proof}\label{direct-proof}
+
+\section{Proof by Contraposition}\label{proof-by-contraposition}
+
+\section{Proof by Contradiction}\label{proof-by-contradiction}
+
+\section{Proof by Equivalence}\label{proof-by-equivalence}
+
+\section{Mathematical Induction}\label{mathematical-induction}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\chapter{Functions and Relations}\label{functions-and-relations}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Basic Types of Functions}\label{basic-types-of-functions}
+
+\section{Composition of Functions}\label{composition-of-functions}
+
+\section{Graphs of Functions}\label{graphs-of-functions}
+
+\section{Relation Properties}\label{relation-properties}
+
+\section{Closures of Relations}\label{closures-of-relations}
+
+\section{Equivalence Relations}\label{equivalence-relations}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\chapter{Arrays and Matrices}\label{arrays-and-matrices}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Indexing}\label{indexing}
+
+\section{Sequences and Summation}\label{sequences-and-summation}
+
+\section{Matrix Arithmetic}\label{matrix-arithmetic}
+
+\section{Transpose}\label{transpose}
+
+\section{Powers of Matrices}\label{powers-of-matrices}
+
+\section{Determinants}\label{determinants}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\chapter{Combinatorics}\label{combinatorics}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Basics of Counting}\label{basics-of-counting}
+
+\section{Pigeonhole Principle}\label{pigeonhole-principle}
+
+\section{Permutation and Combination}\label{permutation-and-combination}
+
+\section{Binomial Theorem}\label{binomial-theorem}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\chapter{Graphs}\label{graphs}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Graph Representation}\label{graph-representation}
+
+\section{Euler and Hamilton Paths}\label{euler-and-hamilton-paths}
+
+\section{Shortest Path}\label{shortest-path}
+
+\section{Planar Graphs}\label{planar-graphs}
+
+\section{Graph Coloring}\label{graph-coloring}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\chapter{Trees}\label{trees}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Tree Traversal}\label{tree-traversal}
+
+\section{Spanning Trees}\label{spanning-trees}
+
+\section{Binomial Trees}\label{binomial-trees}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\chapter{Algorithms}\label{algorithms}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Searching}\label{searching}
+
+\section{Sorting}\label{sorting}
+
+\section{Algorithm Paradigms}\label{algorithm-paradigms}
+
+\section{Complexity of Algorithms}\label{complexity-of-algorithms}
+
+\section{Applications}\label{applications}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\chapter{Computation Models}\label{computation-models}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Finite State Machines}\label{finite-state-machines}
+
+\section{Turing Machine}\label{turing-machine}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\bibliography{packages,book}
+
+
+\end{document}

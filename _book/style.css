@@ -1,0 +1,40 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+body {
+  counter-reset: mycolorbox;
+}
+div.mycolorbox:before {
+  counter-increment: mycolorbox;
+  content: counter(mycolorbox)".";
+}
+div.mycolorbox {
+  font-weight: bold;
+  width: 720px;
+  border: 2px darkgreen;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+  background-color:#C1E1A6;
+  box-shadow: 3px 3px darkgreen;
+}
+div.solution {
+  font-weight: bold;
+  width: 720px;
+  border: 2px solid black;
+  padding: 8px;
+  margin: 8px;
+  background-color:#F3FAB6;
+  box-shadow: 5px 5px 2px #888888;
+}
