@@ -1,0 +1,15 @@
+\usepackage{booktabs}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{mathspec}
+\usepackage{tcolorbox}
+\newcounter{mycolorbox}[section]
+\newenvironment{mycolorbox}{\refstepcounter{mycolorbox}\begin{tcolorbox}[arc=4mm,outer arc=1mm, title=Exercise~\themycolorbox.]}{\end{tcolorbox}}
+\newenvironment{solution}{\begin{tcolorbox}[arc=4mm,outer arc=1mm]}{\end{tcolorbox}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother

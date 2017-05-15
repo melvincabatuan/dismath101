@@ -1,0 +1,10 @@
+# Proofs
+
+
+************************
+## Direct Proof
+## Proof by Contraposition
+## Proof by Contradiction
+## Proof by Equivalence
+## Mathematical Induction
+************************

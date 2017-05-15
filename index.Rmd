@@ -1,0 +1,49 @@
+--- 
+title: "DISMATH101: Solved Problems in Discrete Math"
+author: "Melvin Cabatuan"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a discrete math reviewer written for undergraduate students."
+---
+
+
+
+# Logic
+
+************************
+## Propositional Logic
+## Logical connectives
+## Truth table
+## Logical Equivalences
+## Predicate Logic
+## Quantifiers
+## Rules of Inference
+************************
+
+```{block2, type='mycolorbox'}
+The following statements are propositions, EXCEPT:  
+A. Euclid of Alexandria is human.$\hspace{3cm}\:$C. $5 > 8$      
+B. $1 + 1 = 2$       $\hspace{6.4cm}$D. Who am I?    
+```
+
+> 
+```{definition, name="Proposition"}
+a statement that is either true or false (but not both).
+```
+
+> **Solution:** "**D.** Who am I?" is not a proposition because interrogative statements have no truth value. 
+ 
+
+```{block2, type='mycolorbox'}
+What is the question?
+```
+
+> **Solution:** "I thoroughly disapprove of duels. If a man should challenge me,
+I would take him kindly and forgivingly by the hand and lead him
+to a quiet place and kill him."
